@@ -6,7 +6,8 @@
    "scripts": {
       "dev2": "vite",
       "build": "vite build",
-      "start": "node server.js"
+      "start": "node server.js",
+      "publish": "npm run build && git commit -am 'update' && git push"
    },
    "dependencies": {
       "bknd": "^0.6.1",
