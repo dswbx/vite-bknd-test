@@ -9,7 +9,7 @@
       "start": "node server.js"
    },
    "dependencies": {
-      "bknd": "link:bknd",
+      "bknd": "^0.6.1",
       "concurrently": "^9.1.2",
       "react": "^18.3.1",
       "react-dom": "^18.3.1",
