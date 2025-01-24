@@ -16,7 +16,7 @@ export default function App() {
             </Route>
             <Route path="*">
                <div>
-                  media
+                  media <a href="/admin">admin</a>
                   <div>
                      <Media.Dropzone />
                   </div>
