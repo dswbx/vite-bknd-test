@@ -19,8 +19,15 @@ serve({
    onBuilt: async (app) => {
       const html = await readFile("./dist/index.html", "utf-8");
 
-      app.server.get("/*", serveStatic({ root: "./dist" }), (c) =>
-         c.html(html)
+      app.server.get(
+         "/*",
+         serveStatic({
+            root: "./dist",
+            onNotFound: (path) => {
+               console.log("not found", path);
+            },
+         }),
+         (c) => c.html(html)
       );
    },
 });
