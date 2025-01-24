@@ -7,7 +7,7 @@
       "dev2": "vite",
       "build": "vite build",
       "start": "node server.js",
-      "publish": "npm run build && git commit -am 'update' && git push"
+      "publish": "npm run build && git add . && git commit -m 'update' && git push"
    },
    "dependencies": {
       "bknd": "^0.6.1",
