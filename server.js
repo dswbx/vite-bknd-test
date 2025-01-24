@@ -14,8 +14,7 @@ export const initialConfig = {
    },
 };
 
-export default serve({
-   distPath: "./dist",
+serve({
    initialConfig,
    onBuilt: async (app) => {
       const html = await readFile("./dist/index.html", "utf-8");
